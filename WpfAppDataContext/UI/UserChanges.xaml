@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfAppDataContext.UI.UserChanges"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDataContext.UI"
+        mc:Ignorable="d"
+        Title="UserChanges" Height="450" Width="800">
+    <Grid>
+        <DockPanel Margin="10">
+            <StackPanel Width="100" DockPanel.Dock="Right" Margin="10,0,0,0">
+
+                <TextBox Name="txtName" Margin="0,5"></TextBox>
+
+                    <Button Name="btnAddUser"  Click="btnAddUser_Click">Add User</Button>
+                <Button Name="btnChangeUser" Margin="0, 5" Click="btnChange_Click">Change User</Button>
+                <Button Name="btnDeleteUser" Click="btnDelete_Click">Delete User</Button>
+            </StackPanel>
+            <ListBox Name="lblUsers" DisplayMemberPath="Name"></ListBox>
+        </DockPanel>
+    </Grid>
+</Window>
